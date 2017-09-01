@@ -10,7 +10,8 @@ class Dashboard extends CI_Controller {
 
   public function index()
   {
-    echo "string dash";
+    $data = new stdClass();
+    render_template('dashboard/main', $data);
   }
 
 }

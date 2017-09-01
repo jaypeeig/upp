@@ -35,4 +35,10 @@ class Login extends CI_Controller {
     return false;
   }
 
+  public function sign_out()
+  {
+    $this->auth->logout();
+    redirect('');
+  }
+
 }

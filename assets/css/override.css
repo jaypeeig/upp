@@ -5,3 +5,7 @@
 #auth-navbar button {
   border-radius: 0px;
 }
+
+.slick-imgs div {
+  margin: 2px;
+}

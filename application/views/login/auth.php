@@ -61,8 +61,40 @@
 
 <div class="container">
   <div class="jumbotron">
-    <h3 class="text-center">About Upp</h3>
+    <h3 class="text-center">Upp Console</h3>
     <p class="text-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="row">
+      <div class="col-sm-5">
+        <img src="https://unsplash.it/800?image=250" class="img-responsive"/>
+      </div>
+      <div class="col-sm-7">
+        <h4 class="text-right">Flexible CMS built with <a href='#'>Codeigniter</a></h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="slick-imgs col-sm-12">
+        <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
+        <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
+        <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
+        <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
+        <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
+        <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
+        <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
+        <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
+        <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
+      </div>
+      <script>
+        $(function(){
+          $('.slick-imgs').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: false,
+            autoplaySpeed: 2000,
+          });
+        });
+      </script>
+    </div>
     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>

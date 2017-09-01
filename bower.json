@@ -1,0 +1,36 @@
+{
+  "name": "upp",
+  "homepage": "#",
+  "authors": [
+    "Jaypee Ignacio"
+  ],
+  "description": "Upp bootstrap",
+  "main": [
+    "index.php"
+  ],
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "admin",
+    "bootstrap",
+    "backend",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "/.*",
+    "node_modules",
+    "bower_components",
+    "composer.json",
+    "documentation"
+  ],
+  "dependencies": {
+    "moment": "^2.18.1",
+    "ion.rangeSlider": "ionrangeslider#^2.2.0",
+    "font-awesome": "^4.7.0",
+    "Ionicons": "ionicons#^2.0.1",
+    "jquery-ui": "1.11.4",
+    "slick-carousel": "^1.7.1"
+  }
+}
