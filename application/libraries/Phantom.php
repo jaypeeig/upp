@@ -5,7 +5,7 @@ use JonnyW\PhantomJs\Client;
 class Phantom {
 
 	var $client;
-	
+
 	function __construct()
 	{
 		$this->ci =& get_instance();
@@ -13,17 +13,22 @@ class Phantom {
 		$this->client = Client::getInstance();
 		$this->client->getEngine()->setPath(FCPATH . 'bin' . DIRECTORY_SEPARATOR . 'phantomjs.exe');
 	}
-	
-	function init() 
-	{
-		$request = $this->client->getMessageFactory()->createRequest('https://www.facebook.com/', 'GET');
-		$response = $this->client->getMessageFactory()->createResponse();
-		$this->client->send($request, $response);
-	    
-	    if($response->getStatus() === 200) {
-	        return $response->getContent();
-	    }
 
-	    return $response->getStatus();
+	function send_get_request($url = FALSE)
+	{
+		if ($url) {
+			$request = $this->client->getMessageFactory()->createRequest($url, 'GET');
+    	$response = $this->client->getMessageFactory()->createResponse();
+
+    	$this->client->send($request, $response);
+			return Array(
+				'code' => $response->getStatus(),
+				'content' => $response->getContent(),
+				'contentType' => $response->getContentType()
+			);
+		}
+
+		return $url;
 	}
+
 }

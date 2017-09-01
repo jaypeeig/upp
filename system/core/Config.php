@@ -107,6 +107,7 @@ class CI_Config {
 				$base_url = 'http://localhost/';
 			}
 
+			$base_url = str_replace('[::1]','localhost', $base_url);
 			$this->set_item('base_url', $base_url);
 		}
 

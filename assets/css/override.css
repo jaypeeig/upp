@@ -1,0 +1,7 @@
+#auth-navbar.navbar {
+     border-radius: 0px;
+}
+#auth-navbar .input-group > input.form-control,
+#auth-navbar button {
+  border-radius: 0px;
+}
