@@ -22,6 +22,7 @@ class Auth {
 								'name' => 'foobar'
 						));
 				$tmp['code'] = true;
+				$this->ci->session->set_flashdata('welcome_message', 'Welcome back your grace! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor');
 			}
 		}
 		return_ajax($tmp);

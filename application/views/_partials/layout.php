@@ -35,6 +35,9 @@
 	</body>
 	<script type='text/javascript' src='<?= base_url('assets/js/admin.min.js'); ?>'></script>
 	<script type='text/javascript' src='<?= base_url('assets/js/bootstrap.validator.js'); ?>'></script>
+	<script type='text/javascript' src='<?= base_url('bower_components/moment/moment.js'); ?>'></script>
+	<script type='text/javascript' src='<?= base_url('bower_components/remarkable-bootstrap-notify/bootstrap-notify.min.js'); ?>'></script>
 	<script type='text/javascript' src='<?= base_url('bower_components/slick-carousel/slick/slick.js'); ?>'></script>
+	<script type='text/javascript' src='<?= base_url('assets/js/override.js'); ?>'></script>
 
 </html>

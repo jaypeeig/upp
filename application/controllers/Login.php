@@ -10,6 +10,9 @@ class Login extends CI_Controller {
 
   public function index()
   {
+    if ($this->auth->is_logged_in()) {
+      redirect('');
+    }
     $data = new stdClass();
     render_template('login/auth', $data);
   }

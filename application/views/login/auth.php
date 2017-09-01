@@ -69,6 +69,14 @@
       </div>
       <div class="col-sm-7">
         <h4 class="text-right">Flexible CMS built with <a href='#'>Codeigniter</a></h4>
+        <div class="alert alert-success alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </div>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </div>
       </div>
     </div>
     <div class="row">

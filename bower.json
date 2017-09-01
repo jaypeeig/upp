@@ -31,6 +31,7 @@
     "font-awesome": "^4.7.0",
     "Ionicons": "ionicons#^2.0.1",
     "jquery-ui": "1.11.4",
-    "slick-carousel": "^1.7.1"
+    "slick-carousel": "^1.7.1",
+    "remarkable-bootstrap-notify": "^3.1.3"
   }
 }
