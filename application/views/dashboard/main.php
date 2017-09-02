@@ -29,7 +29,7 @@
                     <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
-                        <img src="https://unsplash.it/160/160?image=177" class="img-circle" alt="User Image">
+                        <img src="<?= base_url('assets/img/avatar-default.jpg'); ?>" class="img-circle" alt="User Image">
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
@@ -78,14 +78,14 @@
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="https://unsplash.it/160/160?image=177" class="user-image" alt="User Image">
+              <img src="<?= base_url('assets/img/avatar-default.jpg'); ?>" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs">Jaypee Ignacio</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="https://unsplash.it/160/160?image=177" class="img-circle" alt="User Image">
+                <img src="<?= base_url('assets/img/avatar-default.jpg'); ?>" class="img-circle" alt="User Image">
 
                 <p>
                   Jaypee Ignacio - Web Developer
@@ -135,7 +135,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="https://unsplash.it/160/160?image=177" class="img-circle" alt="User Image">
+          <img src="<?= base_url('assets/img/avatar-default.jpg'); ?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Jaypee Ignacio</p>
@@ -208,6 +208,7 @@
     <!-- Main content -->
     <section class="content container-fluid">
 
+      <?php if(isset($inner_content)) { echo $inner_content; } ?>
 
     </section>
     <!-- /.content -->

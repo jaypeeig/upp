@@ -61,24 +61,8 @@
 
 <div class="container">
   <div class="jumbotron">
-    <h3 class="text-center">Upp Console</h3>
+    <h3 class="text-center">Upp Console | Flexible CMS built with <a href='#'>Codeigniter</a></h3>
     <p class="text-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <div class="row">
-      <div class="col-sm-5">
-        <img src="https://unsplash.it/800?image=250" class="img-responsive"/>
-      </div>
-      <div class="col-sm-7">
-        <h4 class="text-right">Flexible CMS built with <a href='#'>Codeigniter</a></h4>
-        <div class="alert alert-success alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <strong>Warning!</strong> Better check yourself, you're not looking too good.
-        </div>
-        <div class="alert alert-warning alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <strong>Warning!</strong> Better check yourself, you're not looking too good.
-        </div>
-      </div>
-    </div>
     <div class="row">
       <div class="slick-imgs col-sm-12">
         <div><img src="https://unsplash.it/280?image=<?= rand(1, 1000); ?>" class="img-responsive"/></div>
@@ -102,6 +86,10 @@
           });
         });
       </script>
+    </div>
+    <div class="alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </div>
     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>

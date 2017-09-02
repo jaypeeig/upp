@@ -11,7 +11,7 @@ class Dashboard extends CI_Controller {
   public function index()
   {
     $data = new stdClass();
-    render_template('dashboard/main', $data);
+    render_template('dashboard/graphs', $data);
   }
 
 }
