@@ -11,7 +11,7 @@ class Healthcheck extends CI_Controller {
 
 	public function index()
 	{
-		$pingBack = $this->phantom->send_get_request('http://localhost/uncloset');
+		$pingBack = $this->phantom->send_get_request('http://www.github.com');
 		var_dump($pingBack);
 	}
 

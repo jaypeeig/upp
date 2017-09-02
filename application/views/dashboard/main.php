@@ -2,8 +2,8 @@
   <header class="main-header">
 
     <a href="#" class="logo">
-      <span class="logo-mini"><b>U</b>PP</span>
-      <span class="logo-lg"><b>Admin</b>UPP</span>
+      <span class="logo-mini"><b>U</b>pp</span>
+      <span class="logo-lg"><b>Admin_</b>UPP</span>
     </a>
 
     <nav class="navbar navbar-static-top" role="navigation">
@@ -18,7 +18,7 @@
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
+              <span class="label label-default">4</span>
             </a>
             <ul class="dropdown-menu">
               <li class="header">You have 4 messages</li>
@@ -54,7 +54,7 @@
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
+              <span class="label label-danger">10</span>
             </a>
             <ul class="dropdown-menu">
               <li class="header">You have 10 notifications</li>
@@ -72,43 +72,7 @@
               <li class="footer"><a href="#">View all</a></li>
             </ul>
           </li>
-          <!-- Tasks Menu -->
-          <li class="dropdown tasks-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
-              <li>
-                <!-- Inner menu: contains the tasks -->
-                <ul class="menu">
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <!-- Task title and progress text -->
-                      <h3>
-                        Design some buttons
-                        <small class="pull-right">20%</small>
-                      </h3>
-                      <!-- The progress bar -->
-                      <div class="progress xs">
-                        <!-- Change the css width attribute to simulate progress -->
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                </ul>
-              </li>
-              <li class="footer">
-                <a href="#">View all tasks</a>
-              </li>
-            </ul>
-          </li>
+
           <!-- User Account Menu -->
           <li class="dropdown user user-menu">
             <!-- Menu Toggle Button -->
@@ -132,13 +96,13 @@
               <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
-                    <a href="#">Network</a>
+                    <a href="#">Directory</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Tracking</a>
+                    <a href="#">Contact</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Logs</a>
+                    <a href="#">User Logs</a>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -194,12 +158,12 @@
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">HEADER</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+        <li class="header">System Options</li>
+
+        <li class="active"><a href="#"><i class="fa fa-coffee"></i> <span>Framework</span></a></li>
+        <li><a href="#"><i class="fa fa-dropbox"></i> <span>Inventory</span></a></li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+          <a href="#"><i class="fa fa-mail-forward"></i> <span>Inbound</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -209,6 +173,18 @@
             <li><a href="#">Link in level 2</a></li>
           </ul>
         </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-mail-reply"></i> <span>Outbound</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Link in level 2</a></li>
+            <li><a href="#">Link in level 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-credit-card"></i> <span>Billing</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -220,8 +196,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Console
-        <small> Flex framework</small>
+        Dashboard
+        <small> v.<?= date('myd'); ?></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -326,20 +302,7 @@
     $(function(){
       <?php if(! is_null($this->session->flashdata('welcome_message'))): ?>
         var message = '<?= $this->session->flashdata('welcome_message'); ?>';
-        $.notify({
-        	icon: 'https://unsplash.it/77/77?image=177',
-        	title: 'System Robot',
-        	message: message
-        },{
-        	type: 'minimalist',
-        	delay: 5000,
-        	icon_type: 'image',
-        	template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
-        		'<img data-notify="icon" class="img-circle pull-left">' +
-        		'<span data-notify="title">{1}</span>' +
-        		'<span data-notify="message">{2}</span>' +
-        	'</div>'
-        });
+        pop_notify({message: message});
 
       <?php endif ?>
     });

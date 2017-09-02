@@ -9,7 +9,6 @@ class Phantom {
 	function __construct()
 	{
 		$this->ci =& get_instance();
-		require_once 'vendor/autoload.php';
 		$this->client = Client::getInstance();
 		$this->client->getEngine()->setPath(FCPATH . 'bin' . DIRECTORY_SEPARATOR . 'phantomjs.exe');
 	}
@@ -24,7 +23,7 @@ class Phantom {
 			return Array(
 				'code' => $response->getStatus(),
 				'content' => $response->getContent(),
-				'contentType' => $response->getContentType()
+				'contentType' => $response->getContent()
 			);
 		}
 
